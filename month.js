@@ -14,6 +14,13 @@ function tinhSoNgay() {
         case 6:
         case 9:
         case 11:
-            document.getElementById("hienthi")
+            document.getElementById("hienthi").innerText = "Tháng " + month + " có 30 ngày."
+        break
+        case 2:
+            document.getElementById("hienthi").innerText = "Tháng 2 có 28 ngày (29 ngày nếu là năm nhuận)."
+        break
+        default:
+            document.getElementById("hienthi").innerText = "Không tồn tại tháng này."
+            
     }
 }
